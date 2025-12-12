@@ -1,30 +1,32 @@
-public class Employeesal {
+class employeesal{
     private int id;
     private String name;
     private double salary;
 
-    public Employeesal(int id,String name,double salary)
+    employeesal(int id,String name,double salary)
     {
         this.id=id;
         this.name=name;
         this.salary=salary;
     }
 
-    public void raisesalary(double percent) {
-        if (percent > 0) {
-            double raiseamount = salary * (percent / 100);
-            salary += raiseamount;
-            System.out.println(name+"salary raised by"+percent+"%\n Newsalary:$"+salary);
-        } 
-        else {
-            System.out.println("Invalid percentage Salary remains unchanged");
+    void raiseSalary(double percent)
+    {
+        if(percent>0)
+        {
+            double raiseAmount=salary*(percent/100);
+            salary+=raiseAmount;
+            System.out.println(name+" Salary raised by "+percent+"%"+" new salary:"+salary);
         }
-
+        else
+        {
+            System.out.println("Invalid percentage");
+        }
     }
 
-    public void EmployeeDetails()
+    void employeedetails()
     {
-        System.out.println("Employee ID"+id+"\n Name"+name+"\n Salary:"+salary);
+        System.out.println("Employee id:"+id+"\nEmployee name"+name+"\nEmployee salary:"+salary);
     }
 
 }
