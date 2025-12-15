@@ -14,10 +14,11 @@ class employeesal{
     {
         if(percent>0)
         {
-            double raiseAmount=salary*(percent/100);
-            salary+=raiseAmount;
-            System.out.println(name+" Salary raised by "+percent+"%"+" new salary:"+salary);
+            double raiseamount=salary*(percent/100);
+            salary+=raiseamount;
+            System.out.println(name+"\n salary raised by "+percent+"%"+"\nNew salary:"+salary);
         }
+
         else
         {
             System.out.println("Invalid percentage");
@@ -26,7 +27,6 @@ class employeesal{
 
     void employeedetails()
     {
-        System.out.println("Employee id:"+id+"\nEmployee name"+name+"\nEmployee salary:"+salary);
+        System.out.println("Employee ID:\n"+id+"Employee name:\n"+name+"Employee salry:\n"+salary);
     }
-
 }
